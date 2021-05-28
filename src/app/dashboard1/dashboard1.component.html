@@ -1,0 +1,63 @@
+<nav class="navbar fixed-top navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand   music-app" href="#">Play Music</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" [routerLink]="['../dashboard']">
+          <i class="fa fa-home"></i>
+          Home
+          <span class="sr-only">(current)</span>
+          </a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link" [routerLink]="['../contactus']">
+          <i class="fa fa-envelope-o">
+            <span class="badge badge-danger"></span>
+          </i>
+          Contact Us
+        </a>
+      </li> -->
+
+   
+
+      <li class="nav-item">
+     
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-music" aria-hidden="true">
+            <span class="badge badge-primary">6</span>
+          </i>
+         Country Playist
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        
+          <a class="dropdown-item" [routerLink]="['../india']">India</a>
+          
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" [routerLink]="['../china']">China</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" [routerLink]="['../brazil']">Brazil</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" [routerLink]="['../spain']">Spain</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" [routerLink]="['../germany']">Germany</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" [routerLink]="['../english']">Ringtones</a>
+        </div>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+         
+          <li><a [routerLink]="['../recommendation']" class="text"> Recommendations</a></li>
+          <li><a [routerLink]="['../favourite']" class="text"> Favourites</a></li>
+          <!-- <li><a [routerLink]="['../search']"><span class="glyphicon glyphicon-log-in"></span> Search</a></li> -->
+          <li><a [routerLink]="['../profile']"><img  src="../../assets/images/india.jpg" class="shape" matTooltip="Edit Profile" ></a></li>
+          <li><a [routerLink]="['../logout']" class="text"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+        </ul>
+    
+  </div>
+</nav>
